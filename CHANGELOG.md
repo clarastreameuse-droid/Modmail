@@ -15,6 +15,7 @@ however, insignificant breaking changes do not guarantee a major version bump, s
 - Check for git installation before attempting autoupdate or update command. [#3406](https://github.com/modmail-dev/Modmail/pull/3406)
 - Check to see if bot is using Git repository for install before running update or autoupdate. [#3406](https://github.com/modmail-dev/Modmail/pull/3406)
 - Ability to add attachments directly to snippets via storing image in MongoDB. [#3421](https://github.com/modmail-dev/Modmail/pull/3421)
+- Customizable Arguments in Responses (?args) [#3418](https://github.com/modmail-dev/Modmail/pull/3418)
 
 ### Changed
 - Updated plugin registry [#3412](https://github.com/modmail-dev/Modmail/pull/3412)
@@ -31,6 +32,7 @@ however, insignificant breaking changes do not guarantee a major version bump, s
 - Added ability to delete and edit plain replies. [#3416](https://github.com/modmail-dev/Modmail/pull/3416)
 - Fixed a bug with the disabling of `thread_auto_close` when threads are open. [#3423](https://github.com/modmail-dev/Modmail/pull/3423)
 - Fixed bugs with cancelled thead creation and threadmenu conflicts [#3425](https://github.com/modmail-dev/Modmail/pull/3425)
+- Ability for non-registry plugins to be added when using `registry_plugins_only=true` [#3430](https://github.com/modmail-dev/Modmail/pull/3430)
 
 
 # v4.2.1
