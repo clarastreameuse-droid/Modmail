@@ -32,6 +32,7 @@ however, insignificant breaking changes do not guarantee a major version bump, s
 - Fixed a bug with the disabling of `thread_auto_close` when threads are open [#3423](https://github.com/modmail-dev/Modmail/pull/3423).
 - Fixed bugs with cancelled thead creation and threadmenu conflicts [#3425](https://github.com/modmail-dev/Modmail/pull/3425).
 - Ability for non-registry plugins to be added when using `registry_plugins_only=true` [#3430](https://github.com/modmail-dev/Modmail/pull/3430).
+- Silent error when using `confirm_thread_creation` and react-to-contact, when recipient has DMs disabled [#3447](https://github.com/modmail-dev/Modmail/pull/3447).
 
 
 # v4.2.1
