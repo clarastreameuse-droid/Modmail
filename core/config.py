@@ -74,7 +74,7 @@ class ConfigManager:
         "thread_close_footer": "Replying will create a new thread",
         "thread_close_title": "Thread Closed",
         "thread_close_response": "{closer.mention} has closed this Modmail thread.",
-        "thread_self_close_response": "You have closed this Modmail thread.",
+        "thread_self_close_response": "Votre ticket a été fermé part un staff",
         "thread_move_title": "Thread Moved",
         "thread_move_notify": False,
         "thread_move_notify_mods": False,
