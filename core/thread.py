@@ -1665,7 +1665,7 @@ class Thread:
                     destination=user,
                     from_mod=True,
                     anonymous=anonymous,
-                    plain=plain,
+                    plain=True,
                     content_override=content,
                 )
             )
