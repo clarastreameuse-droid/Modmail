@@ -530,7 +530,13 @@ class ModmailBot(commands.Bot):
         """Bot startup, sets uptime."""
 
         # Wait until config cache is populated with stuff from db and on_connect ran
-        await self.wait_for_connected()
+await self.wait_for_connected()
+
+await self.change_presence(
+    activity=discord.Game("🎫 Ticket = MP !")
+)
+
+if self.guild is None:
 
         if self.guild is None:
             logger.error("Logging out due to invalid GUILD_ID.")
