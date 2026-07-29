@@ -2160,26 +2160,28 @@ class Thread:
                 e,
             )
 
-        if not from_mod and not note:
-            mentions = await self.get_notifications()
-        else:
-            mentions = None
+if not from_mod and not note:
+    mentions = await self.get_notifications()
+else:
+    mentions = None
 
-        if plain:
-            if from_mod and not isinstance(destination, discord.TextChannel):
-                # Plain to user (DM)
-                with warnings.catch_warnings():
-                    warnings.simplefilter("ignore")
-                    additional_images = []
+print("TEST PLAIN", plain, from_mod, destination)
 
-                prefix = f"**{embed.footer.text} " if embed.footer and embed.footer.text else "**"
-                body = embed.description or ""
-                plain_message = (
-    f"💬 Réponse du staff\n\n"
-    f"👑 Rôle : {message.author.top_role.name}\n"
-    f"🛡️ Staff : {message.author.display_name}\n\n"
-    f"{body}"
-)
+if plain:
+    if from_mod and not isinstance(destination, discord.TextChannel):
+        # Plain to user (DM)
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore")
+            additional_images = []
+
+        prefix = f"**{embed.footer.text} " if embed.footer and embed.footer.text else "**"
+        body = embed.description or ""
+        plain_message = (
+            f"💬 Réponse du staff\n\n"
+            f"👑 Rôle : {message.author.top_role.name}\n"
+            f"🛡️ Staff : {message.author.display_name}\n\n"
+            f"{body}"
+        )
 
                 files = []
                 for att in message.attachments:
