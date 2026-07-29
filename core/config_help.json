@@ -539,7 +539,7 @@
     ]
   },
   "thread_self_close_response": {
-    "default": "\"You have closed this Modmail thread.\"",
+    "default": "\"Votre ticket a été fermé part un staff\"",
     "description": "This is the message embed content sent to the recipient upon the closure of a their own thread.",
     "examples": [
       "`{prefix}config set thread_self_close_response You have closed your own thread...`"
