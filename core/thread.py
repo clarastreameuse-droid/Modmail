@@ -2174,7 +2174,12 @@ class Thread:
 
                 prefix = f"**{embed.footer.text} " if embed.footer and embed.footer.text else "**"
                 body = embed.description or ""
-                plain_message = f"{prefix}{embed.author.name}:** {body}"
+                plain_message = (
+    f"💬 Réponse du staff\n\n"
+    f"👑 Rôle : {message.author.top_role.name}\n"
+    f"🛡️ Staff : {message.author.display_name}\n\n"
+    f"{body}"
+)
 
                 files = []
                 for att in message.attachments:
