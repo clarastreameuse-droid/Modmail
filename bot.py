@@ -536,11 +536,11 @@ await self.change_presence(
     activity=discord.Game("🎫 Ticket = MP !")
 )
 
-if self.guild is None:
+print("PRESENCE OK")
 
-        if self.guild is None:
-            logger.error("Logging out due to invalid GUILD_ID.")
-            return await self.close()
+if self.guild is None:
+    logger.error("Logging out due to invalid GUILD_ID.")
+    return await self.close()
 
         if self._started:
             # Bot has started before
